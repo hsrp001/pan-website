@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     
+        input
+        {
+            height: 30px;
+        }
+        select
+        {
+            height: 30px !important;
+        }
+        label
+        {
+          font-weight: bold;
+        }
+
+        .hidden
+        {
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <nav class="flex  bg-white  justify-between shadow-md items-center p-2  px-8"> 
+        <div class="logo w-62">
+        <img src="./image/pan.jpg" alt="" width="100">
+        </div>
+        <div class="navlist">
+          <a href="./index.html">
+
+            <div class="list">Home</div>
+          </a>
+        </div>
+        
+    </nav>
+
+    
+        <h2 class=" text-center text-3xl   p-5">Pan Card SEWA </h2>
+
+        <form id="firstForm" style="display: flex; gap: 0.6rem; flex-direction: column;" class="bg-yellow-300 p-3 m-3 rounded-lg flex flex-cols" method="POST">
+
+       
+  
+            <label for="plateQuantity">Choose Your Service *</label>
+            <select class="form-control" id="plateQuantity" name="plateQuantity" required>
+              <option selected>Select</option>
+              <option > Pencard apply  </option>
+            </select>
+  
+            <label for="state">State /राज्य *</label>
+            <select name="state" id="state" class="form-control" required>
+              <option value="">--Select State--</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Andaman and Nicobar Islands">
+                Andaman and Nicobar Islands
+              </option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Dadar and Nagar Haveli">
+                Dadar and Nagar Haveli
+              </option>
+              <option value="Daman and Diu">Daman and Diu</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Lakshadweep">Lakshadweep</option>
+              <option value="Puducherry">Puducherry</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+            </select>
+  
+
+
+            <label for="plateQuantity">Title /शीर्षक*</label>
+            <select class="form-control" id="plateQuantity" name="plateQuantity" required>
+              <option selected>Select</option>
+              <option value="">shri</option>
+              <option value="">smt</option>
+              <option value="">kummari</option>
+              
+
+            </select>
+  
+
+
+           
+            <label for="Name">Your Name /आवेदक का नाम *</label>
+            <input type="text" name="fullname" id="Name" class="form-control" required />
+  
+  
+            <label for="mobile"> Mobile No /मोबाइल नंबर *</label>
+            <input type="number" onkeypress="return event.keyCode != 10;"  name="mobnumber" id="mobile" class="form-control" maxlength="10" required />
+            
+  
+            <label for="Email"> E-mail ID /ईमेल आईडी *</label>
+            <input type="email" name="email" id="Email" class="form-control"  required />
+  
+  
+            <label for="Address"> Address /पता *</label>
+            <textarea name="address" id="Address" class="form-control"  required></textarea>
+          
+
+              <button type="submit" class="block rounded   mt-5 p-3" style="background-color:black;color:white;font-weight:bold;">
+                Submit Details and Proceed
+              </button>
+              
+          
+          </form>   
+
+    
+          <form id="secondForm" style="display: none; gap: 0.6rem; flex-direction: column;" class="bg-blue-300 p-3 m-3 rounded-lg flex flex-cols" method="POST">
+
+       
+  
+           
+
+
+           
+            <label for="Name">Your Name /आवेदक का नाम *</label>
+            <input type="text" name="fullname" id="Name" class="form-control"  required />
+  
+  
+            <label for="mobile"> Mobile No /मोबाइल नंबर *</label>
+            <input type="text" name="mobnumber" id="mobile" class="form-control"  required />
+  
+            <label for="Email"> E-mail ID /ईमेल आईडी *</label>
+            <input type="email" name="email" id="Email" class="form-control"  required />
+            
+            
+            <label for="Address"> Address /पता *</label>
+            <textarea name="address" id="Address" class="form-control"  required></textarea>
+            <label for="pin">enter your pincode /पिन कोड *</label>
+            <input type="number" name="pin" id="pin" class="form-control"  required />
+  
+            <button type="submit" class="block rounded   mt-5 p-3" style="background-color:black;color:white;font-weight:bold;">
+              Submit Details and Proceed
+            </button>
+  
+          </form>  
+
+
+
+
+
+
+          <footer class=" bg-black p-5 text-white text-center mt-7">
+
+            <div class="footer-container  grid  grid-cols-1 sm:grid-cols-2 gap-5  sm:px-8 mb-10">
+
+              <div class="heading">
+                <h3 class="text-3xl mb-7">Pan card Sawa</h3>
+                <p align="justify">For assistance with PAN card services, don't hesitate to reach out to us through the contact information provided in the footer of our website. Our team is dedicated to providing support and guidance to ensure a smooth experience with your PAN card application and related queries.</p>
+              </div>
+
+              <div class="links text-end flex gap-4 flex-wrap sm:block text-center justify-between  items-center  ">
+                <div class=" text-2xl hidden sm:block">Links</div>
+                <div>Home</div>
+                <div>About</div>
+                <div>Conatct</div>
+                <div>Refund And Cancellation</div>
+
+              </div>
+
+
+            </div>
+
+
+            Pan card website @2024
+
+          </footer>
+
+
+
+
+          <script>
+
+
+
+document.querySelector('#mobile').addEventListener('input', function () {
+    if (this.value.length > 10) {
+        this.value = this.value.slice(0, 10);
+    }
+});
+
+           document.querySelector('#firstForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Getting data from the first form
+            const name = document.querySelector('#Name').value;
+            const mobile = document.querySelector('#mobile').value;
+            const email = document.querySelector('#Email').value;
+            const address = document.querySelector('#Address').value;
+
+            // Populating data to the second form
+            document.querySelector('#secondForm input[name="fullname"]').value = name;
+            document.querySelector('#secondForm input[name="mobnumber"]').value = mobile;
+            document.querySelector('#secondForm input[name="email"]').value = email;
+            document.querySelector('#secondForm textarea[name="address"]').value = address;
+
+            // Showing the second form
+            document.getElementById('secondForm').style.display = 'flex';
+            document.getElementById('firstForm').style.display = 'none';
+
+            // You can submit the second form automatically if needed
+            // document.getElementById('secondForm').submit();
+        });
+        document.querySelector('#secondForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Redirecting to qr.html page
+        window.location.href = './payemtQr.html';
+    });
+          </script>
+
+</body>
+</html>
